@@ -18,6 +18,8 @@ sprint".
 
 Ok, You'll reaction will be like... ¿WAAAAAAT?
 
+![Homer](https://media1.giphy.com/media/a93jwI0wkWTQs/giphy.gif?cid=ecf05e4786f351vpm2z88suk87hrvj6yuy4ha5ki30sp6gpz&rid=giphy.gif)
+
 Fortunately, Ktor has a way to do this because we always can go to the native layer and do whatever we want.
 
 ## What is this
