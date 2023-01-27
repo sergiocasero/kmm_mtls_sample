@@ -10,6 +10,16 @@ This is in contrast to TLS where only the server presents a certificate to the c
 On Android, You'll need to create your own SSLContext and pass it to the client.
 On iOS, You'll need to create a `NSURLCredentials` object and pass it to the client.
 
+## Why?
+
+Think about this scenario. You have a so large KMM application with a lot of http requests. Oauth, login, etc.
+In a call with the backend team, they tell you that they want to enable MTLS for all the endpoints for "the next
+sprint".
+
+Ok, You'll reaction will be like... ¿WAAAAAAT?
+
+Fortunately, Ktor has a way to do this because we always can go to the native layer and do whatever we want.
+
 ## What is this
 
 This is just an example about how to use MTLS with Kotlin Multiplatform and ktor. It is not a library or a framework, it
