@@ -7,7 +7,7 @@ struct iOSApp: App {
     init() {
         let mtlsHelper = MTLSHelper()
         if let credentials =  mtlsHelper.buildURLCrendentialsWithCertificate() {
-            PlatformModuleKt.doInitKoinIos(urlCredentail: credentials)
+            PlatformModuleKt.doInitKoinIos(urlCredential: credentials)
         }
     }
     

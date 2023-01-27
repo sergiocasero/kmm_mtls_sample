@@ -7,10 +7,10 @@ import platform.Foundation.NSURLCredential
 actual fun Module.platformModule() {
 }
 
-fun initKoinIos(urlCredentail: NSURLCredential) {
+fun initKoinIos(urlCredential: NSURLCredential) {
     initKoin(
         module {
-            single { HttpClientProvider(urlCredentail) }
+            single { HttpClientProvider(urlCredential) }
         }
     )
 }

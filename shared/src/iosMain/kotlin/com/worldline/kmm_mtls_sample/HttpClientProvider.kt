@@ -14,7 +14,7 @@ import platform.Foundation.NSURLSessionTask
 actual class HttpClientProvider(private val urlCredential: NSURLCredential) {
     actual fun clientWithMtls(block: HttpClientConfig<*>.() -> Unit) = HttpClient(Darwin) {
         engine {
-            handleChallenge(GemmaChallengerHandler(urlCredential))
+            handleChallenge(MyChallengerHandler(urlCredential))
         }
         block(this)
     }
@@ -24,7 +24,7 @@ actual class HttpClientProvider(private val urlCredential: NSURLCredential) {
     }
 }
 
-class GemmaChallengerHandler(private val urlCredential: NSURLCredential) : ChallengeHandler {
+class MyChallengerHandler(private val urlCredential: NSURLCredential) : ChallengeHandler {
 
     override fun invoke(
         session: NSURLSession,
